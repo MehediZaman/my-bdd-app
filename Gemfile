@@ -31,16 +31,26 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
-group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
-end
+gem 'puma'
+gem 'bootstrap-sass'
 
 group :development do
-  # Access an IRB console on exception pages or by using <%= console %> in views
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug'
+  gem 'rspec-rails', '~> 2.14.1'
+  gem 'factory_girl_rails'
+  gem 'spring'
+  gem 'spring-commands-rspec'
   gem 'web-console', '~> 2.0'
 end
+
+
+group :test do
+ #install capybara
+  gem 'capybara'
+ end
+
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
