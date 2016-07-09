@@ -33,6 +33,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 gem 'puma'
 gem 'bootstrap-sass'
+gem 'simple_form'
 
 group :development do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
