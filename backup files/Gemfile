@@ -36,16 +36,24 @@ gem 'bootstrap-sass'
 gem 'simple_form'
 gem 'redcarpet'
 
-group :development, :test do
-  gem 'factory_girl_rails'
-  gem 'rspec-rails'
+group :development do
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug'
+  gem 'rspec-rails', '~> 2.14.1'
+  gem "factory_girl_rails", "~> 4.0"
+  gem 'spring'
+  gem 'spring-commands-rspec'
+  gem 'spring-commands-cucumber'
+  gem 'web-console', '~> 2.0'
+end
+
+
+group :test do
+ #install capybara
   gem 'capybara'
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
-  gem 'selenium-cucumber'
-  gem 'selenium-webdriver'
-  gem 'watir-webdriver'
-  gem 'colorize'
  end
 
 
